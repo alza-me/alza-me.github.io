@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzada.</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+   
+    <div class="contenedor">
+        <p>¿VERDAD QUE ERES MUUUUUUY ALZADA?</p>
+        <button id="yesBtn">SI</button>
+        <button id="noBtn">NO</button>
+
+
+        <audio id="backgroundMusic">
+            <source src="musica/Y2meta.app - Ed Maverick - Ropa de Bazar _ LETRA - Røny (128 kbps).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            document.body.addEventListener('click', function() {
+                const audio = document.getElementById('backgroundMusic');
+                audio.play();  // Reproduce la música al hacer clic
+            });
+        </script>
+       
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
